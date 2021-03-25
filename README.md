@@ -49,3 +49,31 @@ Maven:
         </dependency>
     </dependencies>
 ```
+
+API Example:
+```
+ @EventHandler
+    public void onMove(PlayerMoveEvent event) {
+        if (event.getPlayer().isSneaking()) {
+            int ping = SparkyAPI.getKeepAlivePing(event.getPlayer());
+            event.getPlayer().sendMessage(String.format("Ping: %s", ping));
+        }
+    }
+
+    @EventHandler
+    public void onSparkyFlag(SparkyViolationEvent event) {
+        String checkName = event.getCheckName();
+        String checkType = event.getCheckType();
+        int violation = event.getViolation();
+        event.getPlayer().sendMessage(String.format("You failed: %s %s %s", checkName, checkType, violation));
+    }
+
+    @EventHandler
+    public void onSparkyPunish(SparkyPunishEvent event) {
+        String checkName = event.getCheckName();
+        String checkType = event.getCheckType();
+        int violation = event.getViolation();
+        event.getPlayer().sendMessage(String.format("You would of been banned for: %s %s %s", checkName,
+                checkType, violation));
+    }
+ ```
