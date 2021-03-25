@@ -2,7 +2,7 @@
 V2 of the Sparky API.
 
 For developers:
-This API uses reflection because of my protection, don't abuse call theses methods or it may cause lag
+This API uses reflection because of the way Sparky is setup, don't abuse call theses methods or it may cause lag
 #
 Documentation:
 ```
