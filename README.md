@@ -36,8 +36,8 @@ Maven:
 ```xml
    <repositories>
         <repository>
-            <id>funkemunky-releases</id>
-            <url>https://nexus.funkemunky.cc/content/repositories/releases/</url>
+            <id>Sparky</id>
+            <url>https://nexus.sparky.ac</url>
         </repository>
     </repositories>
 
