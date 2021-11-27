@@ -70,10 +70,7 @@ API Example:
 
     @EventHandler
     public void onSparkyPunish(SparkyPunishEvent event) {
-        String checkName = event.getCheckName();
-        String checkType = event.getCheckType();
-        int violation = event.getViolation();
-        event.getPlayer().sendMessage(String.format("You would of been banned for: %s %s %s", checkName,
-                checkType, violation));
+        String banID = event.getBanID();
+        event.getPlayer().sendMessage(String.format("You would of been banned for: %s", checkName, banID))
     }
  ```
