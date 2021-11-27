@@ -71,6 +71,6 @@ API Example:
     @EventHandler
     public void onSparkyPunish(SparkyPunishEvent event) {
         String banID = event.getBanID();
-        event.getPlayer().sendMessage(String.format("You would of been banned for: %s", checkName, banID))
+        event.getPlayer().sendMessage(String.format("You would of been banned for: %s", checkName, banID));
     }
  ```
