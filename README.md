@@ -34,7 +34,7 @@ SparkyAPI.resetExempt(Player player) - Resets the players exempt ticks
 
 Maven:
 ```xml
-   <repositories>
+    <repositories>
         <repository>
             <id>Sparky</id>
             <url>https://nexus.sparky.ac/repository/Sparky/</url>
@@ -44,8 +44,13 @@ Maven:
     <dependencies>
         <dependency>
             <groupId>ac.sparky</groupId>
+<<<<<<< HEAD
             <artifactId>SparkyAPI</artifactId>
             <version>2.1</version>
+=======
+            <artifactId>API</artifactId>
+            <version>2.0</version>
+>>>>>>> master
         </dependency>
     </dependencies>
 ```
