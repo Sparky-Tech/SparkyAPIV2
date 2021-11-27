@@ -21,15 +21,8 @@ public class SparkyViolationEvent extends Event {
     @Setter
     private boolean cancelled;
 
-    public SparkyViolationEvent(
-            Player player,
-            String checkName,
-            String checkType,
-            String customCheckName,
-            String customCheckType,
-            String category,
-            int violation,
-            boolean cancelled) {
+    public SparkyViolationEvent(Player player, String checkName, String checkType, String customCheckName,
+            String customCheckType, String category, int violation, boolean cancelled) {
         this.player = player;
         this.checkName = checkName;
         this.checkType = checkType;
@@ -43,6 +36,7 @@ public class SparkyViolationEvent extends Event {
     public HandlerList getHandlers() {
         return handlers;
     }
+
     public static HandlerList getHandlerList() {
         return handlers;
     }

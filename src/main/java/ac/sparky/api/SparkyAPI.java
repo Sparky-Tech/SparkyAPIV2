@@ -2,6 +2,9 @@ package ac.sparky.api;
 
 import org.bukkit.entity.Player;
 
+import java.util.List;
+import java.util.Map;
+
 public class SparkyAPI {
 
     public static boolean isAnticheatEnabled() {
@@ -44,5 +47,17 @@ public class SparkyAPI {
     }
 
     public static void resetExempt(Player player) {
+    }
+
+    public static List<String> getBanwaveFromCloud() {
+        return null;
+    }
+
+    public static Map<String, Integer> getLogsFromCloud(String playerUUID) {
+        return null;
+    }
+
+    public static String getBanInformation(String banID) {
+        return null;
     }
 }
