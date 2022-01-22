@@ -60,4 +60,7 @@ public class SparkyAPI {
     public static String getBanInformation(String banID) {
         return null;
     }
+
+    public static void callSpecificTrigger(long ID, Player player) {
+    }
 }
