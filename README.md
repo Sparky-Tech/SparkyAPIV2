@@ -30,6 +30,12 @@ SparkyAPI.exemptPlayer(Player player, int ticks) - Returns the anticheats checks
 and for a specific amount of ticks (NOTE: 20 ticks = 1 second)
 
 SparkyAPI.resetExempt(Player player) - Resets the players exempt ticks
+
+SparkyAPI.getBanwaveFromCloud() - Returns the list of player's on the ban-wave
+
+SparkyAPI.getLogsFromCloud(String playerUUID) - Returns the player's logs from the cloud
+
+SparkyAPI.getBanInformation(String banID) - Returns the information from a Ban ID
 ```
 
 Maven:
@@ -44,13 +50,8 @@ Maven:
     <dependencies>
         <dependency>
             <groupId>ac.sparky</groupId>
-<<<<<<< HEAD
             <artifactId>SparkyAPI</artifactId>
             <version>2.1</version>
-=======
-            <artifactId>API</artifactId>
-            <version>2.0</version>
->>>>>>> master
         </dependency>
     </dependencies>
 ```
@@ -75,10 +76,7 @@ API Example:
 
     @EventHandler
     public void onSparkyPunish(SparkyPunishEvent event) {
-        String checkName = event.getCheckName();
-        String checkType = event.getCheckType();
-        int violation = event.getViolation();
-        event.getPlayer().sendMessage(String.format("You would of been banned for: %s %s %s", checkName,
-                checkType, violation));
+        String banID = event.getBanID();
+        event.getPlayer().sendMessage(String.format("You would of been banned for: %s", checkName, banID));
     }
  ```
