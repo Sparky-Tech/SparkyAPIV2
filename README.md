@@ -36,6 +36,8 @@ SparkyAPI.getBanwaveFromCloud() - Returns the list of player's on the ban-wave
 SparkyAPI.getLogsFromCloud(String playerUUID) - Returns the player's logs from the cloud
 
 SparkyAPI.getBanInformation(String banID) - Returns the information from a Ban ID
+
+SparkyAPI.callSpecificTrigger(long ID, Player player) - call a specific hard-coded event inside Sparky, could be used for debugging or fixing issues that cannot be fixed without hooking into the target plugin
 ```
 
 Maven:
