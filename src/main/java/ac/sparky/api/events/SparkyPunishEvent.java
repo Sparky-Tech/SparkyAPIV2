@@ -11,11 +11,18 @@ public class SparkyPunishEvent extends Event {
 
     private final Player player;
     private final String banID;
+    private final String checkName;
+    private final String checkType;
+    private final int ping;
     private final boolean cancelled;
 
-    public SparkyPunishEvent(Player player, String banID, boolean cancelled) {
+    public SparkyPunishEvent(Player player, String banID, String checkName, String checkType, int ping,
+                             boolean cancelled) {
         this.player = player;
         this.banID = banID;
+        this.checkName = checkName;
+        this.checkType = checkType;
+        this.ping = ping;
         this.cancelled = cancelled;
     }
 

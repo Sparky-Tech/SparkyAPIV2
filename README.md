@@ -2,7 +2,7 @@
 V2 of the Sparky API.
 
 For developers:
-This API uses reflection because of the way Sparky is setup, don't abuse call theses methods or it may cause lag
+This API uses reflection because of the way Sparky is set up, don't abuse call these methods or it may cause lag
 #
 Documentation:
 ```
@@ -49,9 +49,9 @@ Maven:
 
     <dependencies>
         <dependency>
-            <groupId>ac.sparky</groupId>
+            <groupId>ac.sparky.api</groupId>
             <artifactId>SparkyAPI</artifactId>
-            <version>2.1</version>
+            <version>2.6</version>
         </dependency>
     </dependencies>
 ```
@@ -70,13 +70,20 @@ API Example:
     public void onSparkyFlag(SparkyViolationEvent event) {
         String checkName = event.getCheckName();
         String checkType = event.getCheckType();
-        int violation = event.getViolation();
-        event.getPlayer().sendMessage(String.format("You failed: %s %s %s", checkName, checkType, violation));
+        String description = event.getDescription();
+        String debug = event.getDebug();
+        int violations = event.getViolation();
+        boolean experimental = event.isExperimental();
+        
+        // some code here
     }
 
     @EventHandler
     public void onSparkyPunish(SparkyPunishEvent event) {
         String banID = event.getBanID();
-        event.getPlayer().sendMessage(String.format("You would of been banned for: %s", checkName, banID));
+        String checkName = event.getCheckName();
+        String checkType = event.getCheckType();
+        
+        // some code here
     }
  ```

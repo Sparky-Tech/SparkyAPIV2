@@ -16,13 +16,17 @@ public class SparkyViolationEvent extends Event {
     private final String customCheckName;
     private final String customCheckType;
     private final String category;
+    private final String debug;
+    private final String description;
+    private final boolean experimental;
     private final int violation;
 
     @Setter
     private boolean cancelled;
 
     public SparkyViolationEvent(Player player, String checkName, String checkType, String customCheckName,
-            String customCheckType, String category, int violation, boolean cancelled) {
+            String customCheckType, String category, String debug, String description,
+                                boolean experimental, int violation, boolean cancelled) {
         this.player = player;
         this.checkName = checkName;
         this.checkType = checkType;
@@ -30,6 +34,9 @@ public class SparkyViolationEvent extends Event {
         this.customCheckType = customCheckType;
         this.category = category;
         this.violation = violation;
+        this.debug = debug;
+        this.description = description;
+        this.experimental = experimental;
         this.cancelled = cancelled;
     }
 
