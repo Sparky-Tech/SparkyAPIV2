@@ -54,7 +54,7 @@ Maven:
         <dependency>
             <groupId>ac.sparky.api</groupId>
             <artifactId>SparkyAPI</artifactId>
-            <version>2.6</version>
+            <version>2.7</version>
         </dependency>
     </dependencies>
 ```
