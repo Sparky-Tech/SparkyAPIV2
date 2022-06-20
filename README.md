@@ -1,9 +1,6 @@
 # SparkyAPIV2
 V2 of the Sparky API.
 
-For developers:
-This API uses reflection because of the way Sparky is set up, don't abuse call these methods or it may cause lag
-#
 Documentation:
 ```
 SparkyAPI.isAnticheatEnabled() - Returns a boolean if the anticheat is enabled or not
