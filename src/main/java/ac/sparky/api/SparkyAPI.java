@@ -2,6 +2,7 @@ package ac.sparky.api;
 
 import org.bukkit.entity.Player;
 
+import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
 
@@ -62,5 +63,11 @@ public class SparkyAPI {
     }
 
     public static void callSpecificTrigger(long ID, Player player) {
+    }
+
+    public static void setNotificationState(Player player, boolean notifications) {
+    }
+
+    public static void setAlertState(Player player, boolean alerts) {
     }
 }

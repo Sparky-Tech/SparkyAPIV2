@@ -38,6 +38,10 @@ SparkyAPI.getLogsFromCloud(String playerUUID) - Returns the player's logs from t
 SparkyAPI.getBanInformation(String banID) - Returns the information from a Ban ID
 
 SparkyAPI.callSpecificTrigger(long ID, Player player) - call a specific hard-coded event inside Sparky, could be used for debugging or fixing issues that cannot be fixed without hooking into the target plugin
+
+SparkyAPI.setNotificationState(Player player, boolean notifications) - Enables / disable notifications for a specific player
+
+SparkyAPI.setAlertState(Player player, boolean alerts) - Enables / disable alerts for a specific player
 ```
 
 Maven:
