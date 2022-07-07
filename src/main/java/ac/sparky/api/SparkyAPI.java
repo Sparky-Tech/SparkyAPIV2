@@ -70,4 +70,7 @@ public class SparkyAPI {
 
     public static void setAlertState(Player player, boolean alerts) {
     }
+
+    public static void callSpecificTrigger(long ID) {
+    }
 }
