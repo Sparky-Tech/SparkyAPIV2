@@ -43,20 +43,18 @@ SparkyAPI.setAlertState(Player player, boolean alerts) - Enables / disable alert
 
 Maven:
 ```xml
-    <repositories>
-        <repository>
-            <id>Sparky</id>
-            <url>https://nexus.sparky.ac/repository/Sparky/</url>
-        </repository>
-    </repositories>
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 
-    <dependencies>
-        <dependency>
-            <groupId>ac.sparky.api</groupId>
-            <artifactId>SparkyAPI</artifactId>
-            <version>2.8</version>
-        </dependency>
-    </dependencies>
+	<dependency>
+	    <groupId>com.github.Sparky-Tech</groupId>
+	    <artifactId>SparkyAPIV2</artifactId>
+	    <version>2.8</version>
+	</dependency>
 ```
 
 API Example:
